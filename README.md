@@ -26,30 +26,22 @@ Thanks!
 
 ## Installation
 
-**Note:** Installation differs by platform. Claude Code or Cursor have built-in plugin marketplaces. Codex and OpenCode require manual setup.
+**Note:** This is a security-pinned fork of [obra/superpowers](https://github.com/obra/superpowers). We lock down to versions that have been reviewed and verified to pose no security risks, rather than tracking upstream automatically. This protects against supply chain issues from unexpected upstream changes.
 
-### Claude Code Official Marketplace
+Installation differs by platform. Claude Code or Cursor have built-in plugin marketplaces. Codex and OpenCode require manual setup.
 
-Superpowers is available via the [official Claude plugin marketplace](https://claude.com/plugins/superpowers)
-
-Install the plugin from Claude marketplace:
-
-```bash
-/plugin install superpowers@claude-plugins-official
-```
-
-### Claude Code (via Plugin Marketplace)
+### Claude Code (Recommended)
 
 In Claude Code, register the marketplace first:
 
 ```bash
-/plugin marketplace add obra/superpowers-marketplace
+/plugin marketplace add winningday/superpowers
 ```
 
-Then install the plugin from this marketplace:
+Then install the plugin:
 
 ```bash
-/plugin install superpowers@superpowers-marketplace
+/plugin install superpowers@winningday-superpowers
 ```
 
 ### Cursor (via Plugin Marketplace)
@@ -67,7 +59,7 @@ or search for "superpowers" in the plugin marketplace.
 Tell Codex:
 
 ```
-Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.codex/INSTALL.md
+Fetch and follow instructions from https://raw.githubusercontent.com/winningday/superpowers/refs/heads/main/.codex/INSTALL.md
 ```
 
 **Detailed docs:** [docs/README.codex.md](docs/README.codex.md)
@@ -77,7 +69,7 @@ Fetch and follow instructions from https://raw.githubusercontent.com/obra/superp
 Tell OpenCode:
 
 ```
-Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.opencode/INSTALL.md
+Fetch and follow instructions from https://raw.githubusercontent.com/winningday/superpowers/refs/heads/main/.opencode/INSTALL.md
 ```
 
 **Detailed docs:** [docs/README.opencode.md](docs/README.opencode.md)
@@ -85,14 +77,14 @@ Fetch and follow instructions from https://raw.githubusercontent.com/obra/superp
 ### GitHub Copilot CLI
 
 ```bash
-copilot plugin marketplace add obra/superpowers-marketplace
-copilot plugin install superpowers@superpowers-marketplace
+copilot plugin marketplace add winningday/superpowers
+copilot plugin install superpowers@winningday-superpowers
 ```
 
 ### Gemini CLI
 
 ```bash
-gemini extensions install https://github.com/obra/superpowers
+gemini extensions install https://github.com/winningday/superpowers
 ```
 
 To update:
@@ -186,5 +178,6 @@ MIT License - see LICENSE file for details
 Superpowers is built by [Jesse Vincent](https://blog.fsck.com) and the rest of the folks at [Prime Radiant](https://primeradiant.com).
 
 - **Discord**: [Join us](https://discord.gg/35wsABTejz) for community support, questions, and sharing what you're building with Superpowers
-- **Issues**: https://github.com/obra/superpowers/issues
+- **Issues**: https://github.com/winningday/superpowers/issues
+- **Upstream**: https://github.com/obra/superpowers
 - **Release announcements**: [Sign up](https://primeradiant.com/superpowers/) to get notified about new versions
