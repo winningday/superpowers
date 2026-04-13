@@ -31,34 +31,24 @@ If you're using Superpowers in enterprise and could benefit from commercial supp
 
 ## Installation
 
+**Note:** This is a security-pinned fork of [obra/superpowers](https://github.com/obra/superpowers). We lock down to versions that have been reviewed and verified to pose no security risks, rather than tracking upstream automatically. This protects against supply chain issues from unexpected upstream changes. Install from this fork rather than the official marketplace so you stay on the reviewed version.
+
 Installation differs by harness. If you use more than one, install Superpowers separately for each one.
 
-### Claude Code
+### Claude Code (Recommended)
 
-Superpowers is available via the [official Claude plugin marketplace](https://claude.com/plugins/superpowers)
-
-#### Official Marketplace
-
-- Install the plugin from Anthropic's official marketplace:
-
-  ```bash
-  /plugin install superpowers@claude-plugins-official
-  ```
-
-#### Superpowers Marketplace
-
-The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code.
+This fork ships its own marketplace manifest, so you can install it straight from the repository.
 
 - Register the marketplace:
 
   ```bash
-  /plugin marketplace add obra/superpowers-marketplace
+  /plugin marketplace add winningday/superpowers
   ```
 
 - Install the plugin from this marketplace:
 
   ```bash
-  /plugin install superpowers@superpowers-marketplace
+  /plugin install superpowers@superpowers-dev
   ```
 
 ### Antigravity
@@ -66,7 +56,7 @@ The Superpowers marketplace provides Superpowers and some other related plugins 
 Install Superpowers as a plugin from this repository:
 
 ```bash
-agy plugin install https://github.com/obra/superpowers
+agy plugin install https://github.com/winningday/superpowers
 ```
 
 Antigravity runs the plugin's session-start hook, so Superpowers is active from
@@ -113,7 +103,7 @@ Superpowers is available via the [official Codex plugin marketplace](https://git
 - Register the marketplace:
 
   ```bash
-  droid plugin marketplace add https://github.com/obra/superpowers
+  droid plugin marketplace add https://github.com/winningday/superpowers
   ```
 
 - Install the plugin:
@@ -127,13 +117,13 @@ Superpowers is available via the [official Codex plugin marketplace](https://git
 - Register the marketplace:
 
   ```bash
-  copilot plugin marketplace add obra/superpowers-marketplace
+  copilot plugin marketplace add winningday/superpowers
   ```
 
 - Install the plugin:
 
   ```bash
-  copilot plugin install superpowers@superpowers-marketplace
+  copilot plugin install superpowers@superpowers-dev
   ```
 
 ### Kimi Code
@@ -151,7 +141,7 @@ Superpowers is available in Kimi Code's plugin marketplace.
 - Or install directly from this repository:
 
   ```text
-  /plugins install https://github.com/obra/superpowers
+  /plugins install https://github.com/winningday/superpowers
   ```
 
 - Detailed docs: [docs/README.kimi.md](docs/README.kimi.md)
@@ -164,7 +154,7 @@ already use it in another harness.
 - Tell OpenCode:
 
   ```
-  Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.opencode/INSTALL.md
+  Fetch and follow instructions from https://raw.githubusercontent.com/winningday/superpowers/refs/heads/main/.opencode/INSTALL.md
   ```
 
 - Detailed docs: [docs/README.opencode.md](docs/README.opencode.md)
@@ -174,7 +164,7 @@ already use it in another harness.
 Install Superpowers as a Pi package from this repository:
 
 ```bash
-pi install git:github.com/obra/superpowers
+pi install git:github.com/winningday/superpowers
 ```
 
 For local development, run Pi with this checkout loaded as a temporary package:
@@ -269,5 +259,6 @@ Because skills and plugins don't provide any feedback to creators, we have no id
 Superpowers is built by [Jesse Vincent](https://blog.fsck.com) and the rest of the folks at [Prime Radiant](https://primeradiant.com).
 
 - **Discord**: [Join us](https://discord.gg/35wsABTejz) for community support, questions, and sharing what you're building with Superpowers
-- **Issues**: https://github.com/obra/superpowers/issues
+- **Issues**: https://github.com/winningday/superpowers/issues
+- **Upstream**: https://github.com/obra/superpowers
 - **Release announcements**: [Sign up](https://primeradiant.com/superpowers/) to get notified about new versions
